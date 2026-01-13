@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Index</title>
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+  <h1>Посты</h1>
+  {% for post in posts %}
+    <article>
+      <h2>{{ post.location }}</h2>
+      <p>{{ post.text }}</p>
+    </article>
+  {% endfor %}
+</body>
+</html>
